@@ -30,7 +30,7 @@ const PortfolioSection = () => {
       title: 'Retail CRM Enhancement',
       category: 'AI-Powered CRM',
       image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      description: 'Upgraded a retail chain\'s CRM with AI capabilities to predict customer preferences and automate personalized marketing campaigns, resulting in a 28% increase in customer retention.',
+      description: 'Upgraded a retail chain's CRM with AI capabilities to predict customer preferences and automate personalized marketing campaigns, resulting in a 28% increase in customer retention.',
       technologies: ['Predictive Analytics', 'NLP', 'Recommendation Systems', 'Marketing Automation']
     },
     {

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-blue: #0062FF;
+  --secondary-blue: #4D8DFF;
+  --light-blue: #E6F0FF;
+  --dark-blue: #0045B5;
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+  --bg-white: #FFFFFF;
+  --bg-light: #F8FAFC;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.gradient-bg {
+  background: linear-gradient(120deg, var(--primary-blue), var(--secondary-blue));
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-in-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
